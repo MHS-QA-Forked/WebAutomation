@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Ebay_Automation_Script_" class="navigator-link">
+              <span class="suite-name border-failed">Ebay Automation Script </span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Ebay_Automation_Script_" class="navigator-link ">
+                    <span>EbayTestRunner.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Ebay_Automation_Script_" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Ebay_Automation_Script_" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Ebay_Automation_Script_" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Ebay_Automation_Script_" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Ebay_Automation_Script_" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Ebay_Automation_Script_" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">16 methods, 1 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Ebay_Automation_Script_" class="hide-methods failed suite-Ebay_Automation_Script_"> (hide)</a> <!-- hide-methods failed suite-Ebay_Automation_Script_ -->
+                      <a href="#" panel-name="suite-Ebay_Automation_Script_" class="show-methods failed suite-Ebay_Automation_Script_"> (show)</a> <!-- show-methods failed suite-Ebay_Automation_Script_ -->
+                    </span>
+                    <div class="method-list-content failed suite-Ebay_Automation_Script_">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ebay_Automation_Script_" title="ebayTests.HomeUtilitiesTests" class="method navigator-link" hash-for-method="savedUtilityTest">savedUtilityTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Ebay_Automation_Script_ -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Ebay_Automation_Script_" class="hide-methods passed suite-Ebay_Automation_Script_"> (hide)</a> <!-- hide-methods passed suite-Ebay_Automation_Script_ -->
+                      <a href="#" panel-name="suite-Ebay_Automation_Script_" class="show-methods passed suite-Ebay_Automation_Script_"> (show)</a> <!-- show-methods passed suite-Ebay_Automation_Script_ -->
+                    </span>
+                    <div class="method-list-content passed suite-Ebay_Automation_Script_">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ebay_Automation_Script_" title="ebayTests.HomeUtilitiesTests" class="method navigator-link" hash-for-method="businessAndIndustrialUtilityTest">businessAndIndustrialUtilityTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ebay_Automation_Script_" title="ebayTests.HomeUtilitiesTests" class="method navigator-link" hash-for-method="collectiblesAndArtTest">collectiblesAndArtTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ebay_Automation_Script_" title="ebayTests.HomeUtilitiesTests" class="method navigator-link" hash-for-method="dealsUtilityTest">dealsUtilityTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ebay_Automation_Script_" title="ebayTests.HomeUtilitiesTests" class="method navigator-link" hash-for-method="electronicsUtilityTest">electronicsUtilityTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ebay_Automation_Script_" title="ebayTests.HomeUtilitiesTests" class="method navigator-link" hash-for-method="fashionUtilityTest">fashionUtilityTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ebay_Automation_Script_" title="ebayTests.HomeUtilitiesTests" class="method navigator-link" hash-for-method="homeAndGardenTest">homeAndGardenTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ebay_Automation_Script_" title="ebayTests.HomeUtilitiesTests" class="method navigator-link" hash-for-method="homeButtonTest">homeButtonTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ebay_Automation_Script_" title="ebayTests.HomeUtilitiesTests" class="method navigator-link" hash-for-method="motorsUtilTest">motorsUtilTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ebay_Automation_Script_" title="ebayTests.HomeUtilitiesTests" class="method navigator-link" hash-for-method="musicUtilityTest">musicUtilityTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ebay_Automation_Script_" title="ebayTests.PurchseTest" class="method navigator-link" hash-for-method="purchaseAnItemTest">purchaseAnItemTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ebay_Automation_Script_" title="ebayTests.signInTest" class="method navigator-link" hash-for-method="registerTest">registerTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ebay_Automation_Script_" title="ebayTests.signInTest" class="method navigator-link" hash-for-method="signInTest">signInTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ebay_Automation_Script_" title="ebayTests.HomeUtilitiesTests" class="method navigator-link" hash-for-method="sportingGoodsTest">sportingGoodsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ebay_Automation_Script_" title="ebayTests.HomeUtilitiesTests" class="method navigator-link" hash-for-method="toysUtilityTest">toysUtilityTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ebay_Automation_Script_" title="ebayTests.HomeUtilitiesTests" class="method navigator-link" hash-for-method="under10utilityTest">under10utilityTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Ebay_Automation_Script_ -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Ebay_Automation_Script_" class="panel Ebay_Automation_Script_">
+          <div class="suite-Ebay_Automation_Script_-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ebayTests.HomeUtilitiesTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="savedUtilityTest">
+                  </a> <!-- savedUtilityTest -->
+                  <span class="method-name">savedUtilityTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(), &apos;Saved&apos;) and @href=&apos;/feed&apos;]&quot;}
+  (Session info: chrome=73.0.3683.86)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Mac OS X 10.14.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Mds-MacBook-Pro.attlocal.net&apos;, ip: &apos;2600:1700:7730:10c0:0:0:0:37%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: /var/folders/j4/vzdsqcyj4qz...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:61087}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.86, webStorageEnabled: true}
+Session ID: e21d575da281d564907bf394ee2ad5c8
+*** Element info: {Using=xpath, value=//a[contains(text(), &apos;Saved&apos;) and @href=&apos;/feed&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at ebayUtil.HomepageUtilities.savedUtility(HomepageUtilities.java:40)
+	at ebayTests.HomeUtilitiesTests.savedUtilityTest(HomeUtilitiesTests.java:24)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ebay_Automation_Script_-class-failed -->
+          <div class="suite-Ebay_Automation_Script_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ebayTests.signInTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerTest">
+                  </a> <!-- registerTest -->
+                  <span class="method-name">registerTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="signInTest">
+                  </a> <!-- signInTest -->
+                  <span class="method-name">signInTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ebay_Automation_Script_-class-passed -->
+          <div class="suite-Ebay_Automation_Script_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ebayTests.HomeUtilitiesTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="businessAndIndustrialUtilityTest">
+                  </a> <!-- businessAndIndustrialUtilityTest -->
+                  <span class="method-name">businessAndIndustrialUtilityTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="collectiblesAndArtTest">
+                  </a> <!-- collectiblesAndArtTest -->
+                  <span class="method-name">collectiblesAndArtTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dealsUtilityTest">
+                  </a> <!-- dealsUtilityTest -->
+                  <span class="method-name">dealsUtilityTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="electronicsUtilityTest">
+                  </a> <!-- electronicsUtilityTest -->
+                  <span class="method-name">electronicsUtilityTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fashionUtilityTest">
+                  </a> <!-- fashionUtilityTest -->
+                  <span class="method-name">fashionUtilityTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homeAndGardenTest">
+                  </a> <!-- homeAndGardenTest -->
+                  <span class="method-name">homeAndGardenTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homeButtonTest">
+                  </a> <!-- homeButtonTest -->
+                  <span class="method-name">homeButtonTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="motorsUtilTest">
+                  </a> <!-- motorsUtilTest -->
+                  <span class="method-name">motorsUtilTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="musicUtilityTest">
+                  </a> <!-- musicUtilityTest -->
+                  <span class="method-name">musicUtilityTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sportingGoodsTest">
+                  </a> <!-- sportingGoodsTest -->
+                  <span class="method-name">sportingGoodsTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="toysUtilityTest">
+                  </a> <!-- toysUtilityTest -->
+                  <span class="method-name">toysUtilityTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="under10utilityTest">
+                  </a> <!-- under10utilityTest -->
+                  <span class="method-name">under10utilityTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ebay_Automation_Script_-class-passed -->
+          <div class="suite-Ebay_Automation_Script_-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ebayTests.PurchseTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="purchaseAnItemTest">
+                  </a> <!-- purchaseAnItemTest -->
+                  <span class="method-name">purchaseAnItemTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ebay_Automation_Script_-class-passed -->
+        </div> <!-- panel Ebay_Automation_Script_ -->
+        <div panel-name="test-xml-Ebay_Automation_Script_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/arif_chowdhuary/IdeaProjects/TeamApple1/Ebay/target/test-classes/EbayTestRunner.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Ebay Automation Script &quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;parameter name=&quot;os&quot; value=&quot;OS X&quot;/&gt;
+  &lt;parameter name=&quot;os_version&quot; value=&quot;Mojave&quot;/&gt;
+  &lt;parameter name=&quot;browserVersion&quot; value=&quot;74.0.3729.6&quot;/&gt;
+  &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;https://www.ebay.com/&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Ebay Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ebayTests.HomeUtilitiesTests&quot;/&gt;
+      &lt;class name=&quot;ebayTests.PurchseTest&quot;/&gt;
+      &lt;class name=&quot;ebayTests.signInTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Ebay Test --&gt;
+&lt;/suite&gt; &lt;!-- Ebay Automation Script  --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Ebay_Automation_Script_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Ebay Automation Script </span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Ebay Test (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Ebay_Automation_Script_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Ebay Automation Script </span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Ebay_Automation_Script_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Ebay Automation Script </span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Ebay_Automation_Script_');
+function tableData_Ebay_Automation_Script_() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(16);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'savedUtilityTest')
+data.setCell(0, 2, 'ebayTests.HomeUtilitiesTests')
+data.setCell(0, 3, 10034);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'purchaseAnItemTest')
+data.setCell(1, 2, 'ebayTests.PurchseTest')
+data.setCell(1, 3, 9484);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'signInTest')
+data.setCell(2, 2, 'ebayTests.signInTest')
+data.setCell(2, 3, 4431);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'registerTest')
+data.setCell(3, 2, 'ebayTests.signInTest')
+data.setCell(3, 3, 4373);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'businessAndIndustrialUtilityTest')
+data.setCell(4, 2, 'ebayTests.HomeUtilitiesTests')
+data.setCell(4, 3, 3581);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'sportingGoodsTest')
+data.setCell(5, 2, 'ebayTests.HomeUtilitiesTests')
+data.setCell(5, 3, 3516);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'electronicsUtilityTest')
+data.setCell(6, 2, 'ebayTests.HomeUtilitiesTests')
+data.setCell(6, 3, 2697);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'fashionUtilityTest')
+data.setCell(7, 2, 'ebayTests.HomeUtilitiesTests')
+data.setCell(7, 3, 2587);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'homeAndGardenTest')
+data.setCell(8, 2, 'ebayTests.HomeUtilitiesTests')
+data.setCell(8, 3, 1774);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'dealsUtilityTest')
+data.setCell(9, 2, 'ebayTests.HomeUtilitiesTests')
+data.setCell(9, 3, 1694);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'toysUtilityTest')
+data.setCell(10, 2, 'ebayTests.HomeUtilitiesTests')
+data.setCell(10, 3, 1692);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'motorsUtilTest')
+data.setCell(11, 2, 'ebayTests.HomeUtilitiesTests')
+data.setCell(11, 3, 1633);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'musicUtilityTest')
+data.setCell(12, 2, 'ebayTests.HomeUtilitiesTests')
+data.setCell(12, 3, 1556);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'under10utilityTest')
+data.setCell(13, 2, 'ebayTests.HomeUtilitiesTests')
+data.setCell(13, 3, 1370);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'collectiblesAndArtTest')
+data.setCell(14, 2, 'ebayTests.HomeUtilitiesTests')
+data.setCell(14, 3, 1266);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'homeButtonTest')
+data.setCell(15, 2, 'ebayTests.HomeUtilitiesTests')
+data.setCell(15, 3, 60);
+window.suiteTableData['Ebay_Automation_Script_']= { tableData: data, tableDiv: 'times-div-Ebay_Automation_Script_'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <div id="times-div-Ebay_Automation_Script_">
+              </div> <!-- times-div-Ebay_Automation_Script_ -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Ebay_Automation_Script_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Ebay Automation Script </span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Ebay_Automation_Script_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Ebay_Automation_Script_" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">ebayTests.HomeUtilitiesTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(https://www.ebay.com/)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initelEments</span>
+                <span class="method-start">4729 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">businessAndIndustrialUtilityTest</span>
+                <span class="method-start">4747 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUP</span>
+                <span class="method-start">8329 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(https://www.ebay.com/)</span>
+                <span class="method-start">8443 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initelEments</span>
+                <span class="method-start">12790 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">collectiblesAndArtTest</span>
+                <span class="method-start">12791 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUP</span>
+                <span class="method-start">14057 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(https://www.ebay.com/)</span>
+                <span class="method-start">14160 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initelEments</span>
+                <span class="method-start">19518 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dealsUtilityTest</span>
+                <span class="method-start">19519 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUP</span>
+                <span class="method-start">21213 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(https://www.ebay.com/)</span>
+                <span class="method-start">21327 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initelEments</span>
+                <span class="method-start">25630 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">electronicsUtilityTest</span>
+                <span class="method-start">25631 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUP</span>
+                <span class="method-start">28329 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(https://www.ebay.com/)</span>
+                <span class="method-start">28439 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initelEments</span>
+                <span class="method-start">33641 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">fashionUtilityTest</span>
+                <span class="method-start">33642 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUP</span>
+                <span class="method-start">36229 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(https://www.ebay.com/)</span>
+                <span class="method-start">36345 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initelEments</span>
+                <span class="method-start">42688 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">homeAndGardenTest</span>
+                <span class="method-start">42688 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUP</span>
+                <span class="method-start">44462 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(https://www.ebay.com/)</span>
+                <span class="method-start">44577 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initelEments</span>
+                <span class="method-start">49350 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">homeButtonTest</span>
+                <span class="method-start">49356 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUP</span>
+                <span class="method-start">49416 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(https://www.ebay.com/)</span>
+                <span class="method-start">49521 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initelEments</span>
+                <span class="method-start">55223 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">motorsUtilTest</span>
+                <span class="method-start">55224 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUP</span>
+                <span class="method-start">56857 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(https://www.ebay.com/)</span>
+                <span class="method-start">56969 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initelEments</span>
+                <span class="method-start">63014 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">musicUtilityTest</span>
+                <span class="method-start">63015 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUP</span>
+                <span class="method-start">64571 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(https://www.ebay.com/)</span>
+                <span class="method-start">64679 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initelEments</span>
+                <span class="method-start">69735 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">savedUtilityTest</span>
+                <span class="method-start">69736 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUP</span>
+                <span class="method-start">79774 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(https://www.ebay.com/)</span>
+                <span class="method-start">79889 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initelEments</span>
+                <span class="method-start">84894 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">sportingGoodsTest</span>
+                <span class="method-start">84895 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUP</span>
+                <span class="method-start">88411 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(https://www.ebay.com/)</span>
+                <span class="method-start">88521 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initelEments</span>
+                <span class="method-start">92822 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">toysUtilityTest</span>
+                <span class="method-start">92823 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUP</span>
+                <span class="method-start">94515 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(https://www.ebay.com/)</span>
+                <span class="method-start">94618 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initelEments</span>
+                <span class="method-start">99660 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">under10utilityTest</span>
+                <span class="method-start">99661 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUP</span>
+                <span class="method-start">101031 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ebayTests.PurchseTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(https://www.ebay.com/)</span>
+                <span class="method-start">101142 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initElements</span>
+                <span class="method-start">108378 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">purchaseAnItemTest</span>
+                <span class="method-start">108378 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUP</span>
+                <span class="method-start">117862 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ebayTests.signInTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(https://www.ebay.com/)</span>
+                <span class="method-start">117995 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initElements</span>
+                <span class="method-start">123197 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">registerTest</span>
+                <span class="method-start">123199 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUP</span>
+                <span class="method-start">127572 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(https://www.ebay.com/)</span>
+                <span class="method-start">127680 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initElements</span>
+                <span class="method-start">133921 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">signInTest</span>
+                <span class="method-start">133921 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">cleanUP</span>
+                <span class="method-start">138352 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
